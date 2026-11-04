@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "X1hKCt2i9v4=",
+  "success": true,
+  "projectFilePath": "c:\\Thoufic\\Project\\Online-Quiz\\OnlineQuiz.Api\\OnlineQuiz.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dharu\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.13\\microsoft.aspnetcore.openapi.10.0.13.nupkg.sha512",
+    "C:\\Users\\dharu\\.nuget\\packages\\microsoft.openapi\\2.12.2\\microsoft.openapi.2.12.2.nupkg.sha512"
+  ],
+  "logs": []
+}
