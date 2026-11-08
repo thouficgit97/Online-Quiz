@@ -4,8 +4,7 @@ namespace OnlineQuiz.Api;
 public class UserController : ControllerBase
 {
     private readonly IUserService userService;
-    [Route("register")]
-    [HttpPost]
+    [HttpPost("register")]
     public void Register([FromBody] RegisterRequest request)
     {
         
