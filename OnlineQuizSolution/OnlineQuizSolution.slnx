@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../OnlineQuiz.Api/OnlineQuiz.Api.csproj" />
+  <Project Path="../OnlineQuiz.Core/OnlineQuiz.Core.csproj" />
+  <Project Path="../OnlineQuiz.Data/OnlineQuiz.Data.csproj" />
+  <Project Path="../OnlineQuiz.Infrastructure/OnlineQuiz.Infrastructure.csproj" />
+</Solution>
