@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "O4TTKedqLFQ=",
+  "success": true,
+  "projectFilePath": "D:\\OnlineQuiz\\Backend\\OnlineQuiz.Infrastructure\\OnlineQuiz.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\F.THOUFIC YOUSUF\\.nuget\\packages\\antlr3.runtime\\3.5.1\\antlr3.runtime.3.5.1.nupkg.sha512",
+    "C:\\Users\\F.THOUFIC YOUSUF\\.nuget\\packages\\iesi.collections\\4.1.1\\iesi.collections.4.1.1.nupkg.sha512",
+    "C:\\Users\\F.THOUFIC YOUSUF\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0\\microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\F.THOUFIC YOUSUF\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.0\\microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\F.THOUFIC YOUSUF\\.nuget\\packages\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",
+    "C:\\Users\\F.THOUFIC YOUSUF\\.nuget\\packages\\netstandard.library\\1.6.0\\netstandard.library.1.6.0.nupkg.sha512",
+    "C:\\Users\\F.THOUFIC YOUSUF\\.nuget\\packages\\nhibernate\\5.7.1\\nhibernate.5.7.1.nupkg.sha512",
+    "C:\\Users\\F.THOUFIC YOUSUF\\.nuget\\packages\\npgsql\\10.0.3\\npgsql.10.0.3.nupkg.sha512",
+    "C:\\Users\\F.THOUFIC YOUSUF\\.nuget\\packages\\remotion.linq\\2.2.0\\remotion.linq.2.2.0.nupkg.sha512",
+    "C:\\Users\\F.THOUFIC YOUSUF\\.nuget\\packages\\remotion.linq.eagerfetching\\2.2.0\\remotion.linq.eagerfetching.2.2.0.nupkg.sha512",
+    "C:\\Users\\F.THOUFIC YOUSUF\\.nuget\\packages\\system.configuration.configurationmanager\\10.0.0\\system.configuration.configurationmanager.10.0.0.nupkg.sha512",
+    "C:\\Users\\F.THOUFIC YOUSUF\\.nuget\\packages\\system.diagnostics.eventlog\\10.0.0\\system.diagnostics.eventlog.10.0.0.nupkg.sha512",
+    "C:\\Users\\F.THOUFIC YOUSUF\\.nuget\\packages\\system.security.cryptography.protecteddata\\10.0.0\\system.security.cryptography.protecteddata.10.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
