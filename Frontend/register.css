@@ -1,0 +1,29 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#form
+{
+    margin : 5px;
+    padding : 15px;
+    border-color: black;
+    border: 2px solid;
+    border-radius: 5px;
+    height: 250px;
+    width: 200px;
+}
+
+#error-message
+{
+    color: red;
+    display: none;
+    font-size: 12px;
+}
+ #register-form-cred
+ {
+    background-color: cadetblue;
+ }
