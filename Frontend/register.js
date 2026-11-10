@@ -1,5 +1,5 @@
 
-function register() {
+async function register() {
     var usernameError = usernameValidation();
 
     var errorMessage = document.getElementById("error-message");
@@ -18,6 +18,24 @@ function register() {
     errorMessage.style.display = "none";
 
     // Both validations passed. Continue registration.
+    var response = await fetch(`${API_BASE_URL}/api/User/Register`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            username: document.getElementById("uname").value.trim(),
+            password: document.getElementById("pwd1").value
+        })
+    });
+
+    response.then(function (data) {
+        if (data.ok) {
+            redirectToLogin();
+        } else {
+            errorMessage.style.display = "block";
+        }
+    });
 }
 function redirectToLogin()
 {
@@ -110,3 +128,5 @@ function clearForm()
     document.getElementById("pwd2").value = "";
     document.getElementById("error-message").style.display = "none";
 }
+
+API_BASE_URL = "http://localhost:5002";
