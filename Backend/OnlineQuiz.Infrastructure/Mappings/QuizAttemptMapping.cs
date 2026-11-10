@@ -1,3 +1,5 @@
+using NHibernate.Mapping.ByCode;
+using NHibernate.Mapping.ByCode.Conformist;
 using OnlineQuiz.Core.Entities;
 
 public class QuizAttemptMapping : ClassMapping<QuizAttempts>

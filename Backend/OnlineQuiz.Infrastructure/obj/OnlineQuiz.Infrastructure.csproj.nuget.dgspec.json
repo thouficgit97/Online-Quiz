@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OnlineQuiz\\Backend\\OnlineQuiz.Infrastructure\\OnlineQuiz.Infrastructure.csproj": {}
+    "D:\\OnlineQuiz\\Online-Quiz\\Backend\\OnlineQuiz.Infrastructure\\OnlineQuiz.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\OnlineQuiz\\Backend\\OnlineQuiz.Core\\OnlineQuiz.Core.csproj": {
+    "D:\\OnlineQuiz\\Online-Quiz\\Backend\\OnlineQuiz.Core\\OnlineQuiz.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineQuiz\\Backend\\OnlineQuiz.Core\\OnlineQuiz.Core.csproj",
+        "projectUniqueName": "D:\\OnlineQuiz\\Online-Quiz\\Backend\\OnlineQuiz.Core\\OnlineQuiz.Core.csproj",
         "projectName": "OnlineQuiz.Core",
-        "projectPath": "D:\\OnlineQuiz\\Backend\\OnlineQuiz.Core\\OnlineQuiz.Core.csproj",
+        "projectPath": "D:\\OnlineQuiz\\Online-Quiz\\Backend\\OnlineQuiz.Core\\OnlineQuiz.Core.csproj",
         "packagesPath": "C:\\Users\\F.THOUFIC YOUSUF\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineQuiz\\Backend\\OnlineQuiz.Core\\obj\\",
+        "outputPath": "D:\\OnlineQuiz\\Online-Quiz\\Backend\\OnlineQuiz.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\F.THOUFIC YOUSUF\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -339,14 +339,14 @@
         }
       }
     },
-    "D:\\OnlineQuiz\\Backend\\OnlineQuiz.Infrastructure\\OnlineQuiz.Infrastructure.csproj": {
+    "D:\\OnlineQuiz\\Online-Quiz\\Backend\\OnlineQuiz.Infrastructure\\OnlineQuiz.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OnlineQuiz\\Backend\\OnlineQuiz.Infrastructure\\OnlineQuiz.Infrastructure.csproj",
+        "projectUniqueName": "D:\\OnlineQuiz\\Online-Quiz\\Backend\\OnlineQuiz.Infrastructure\\OnlineQuiz.Infrastructure.csproj",
         "projectName": "OnlineQuiz.Infrastructure",
-        "projectPath": "D:\\OnlineQuiz\\Backend\\OnlineQuiz.Infrastructure\\OnlineQuiz.Infrastructure.csproj",
+        "projectPath": "D:\\OnlineQuiz\\Online-Quiz\\Backend\\OnlineQuiz.Infrastructure\\OnlineQuiz.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\F.THOUFIC YOUSUF\\.nuget\\packages\\",
-        "outputPath": "D:\\OnlineQuiz\\Backend\\OnlineQuiz.Infrastructure\\obj\\",
+        "outputPath": "D:\\OnlineQuiz\\Online-Quiz\\Backend\\OnlineQuiz.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\F.THOUFIC YOUSUF\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -362,8 +362,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\OnlineQuiz\\Backend\\OnlineQuiz.Core\\OnlineQuiz.Core.csproj": {
-                "projectPath": "D:\\OnlineQuiz\\Backend\\OnlineQuiz.Core\\OnlineQuiz.Core.csproj"
+              "D:\\OnlineQuiz\\Online-Quiz\\Backend\\OnlineQuiz.Core\\OnlineQuiz.Core.csproj": {
+                "projectPath": "D:\\OnlineQuiz\\Online-Quiz\\Backend\\OnlineQuiz.Core\\OnlineQuiz.Core.csproj"
               }
             }
           }

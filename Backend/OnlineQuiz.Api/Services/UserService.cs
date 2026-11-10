@@ -1,21 +1,52 @@
 namespace OnlineQuiz.Api;
+
+using NHibernate.Criterion;
 using OnlineQuiz.Core.Entities;
-public class userService
+public class UserService
 {
-    public void Register(string username, string password)
-    {
-        // Implement the logic to register a new user
-        // For example, you can create a new User object and save it to the database
-        var user = new User
+    private readonly DBService _dbService;
+    public (bool,string) Register(string username, string password)
+    {   
+        var user = _dbService.Get<User>(Restrictions.Eq(nameof(User.Username),username));
+        if(user != null)
         {
-            Username = username,
-            Password = password,
-            CreatedAt = DateTime.UtcNow
+            return (false,"Username already exists");
+        }
+        else
+        {
+            var newUser = new User
+            {
+                Username = username,
+                Password = password,
+                CreatedAt = DateTime.UtcNow
+                 // In a real application, make sure to hash the password before storing it
+            };
+            try
+            {
+                _dbService.Save<User>(newUser);
+            }
+            catch(Exception ex)
+            {
+                return (false,ex.Message);
+            }
+        }
+        return (true,"User registered successfully");
+    }
+    public (bool,string) Login(string username, string password)
+    {
+        var user = _dbService.Get<User>(Restrictions.Eq(nameof(User.Username),username));
+        if(user == null || user.Password != password)
+        {
+            return (false,"Invalid username or password");
+        }
+        // Implement session management logic here
+        var session = new Session()
+        {
+            CreatedAt = DateTime.UtcNow,
+            ExpiresAt = DateTime.UtcNow.AddHours(24),
+            User = user
         };
-        
-        DBService.Save<User>(user);
-        // Save the user to the database (this is just a placeholder, implement your own logic)
-        // dbContext.Users.Add(user);
-        // dbContext.SaveChanges();
+        _dbService.Save<Session>(session);
+        return (true,"Login successful");
     }
 }

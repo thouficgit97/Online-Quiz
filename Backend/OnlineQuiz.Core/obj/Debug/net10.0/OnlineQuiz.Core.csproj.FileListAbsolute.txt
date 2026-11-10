@@ -1,0 +1,12 @@
+D:\OnlineQuiz\Online-Quiz\Backend\OnlineQuiz.Core\bin\Debug\net10.0\OnlineQuiz.Core.deps.json
+D:\OnlineQuiz\Online-Quiz\Backend\OnlineQuiz.Core\bin\Debug\net10.0\OnlineQuiz.Core.dll
+D:\OnlineQuiz\Online-Quiz\Backend\OnlineQuiz.Core\bin\Debug\net10.0\OnlineQuiz.Core.pdb
+D:\OnlineQuiz\Online-Quiz\Backend\OnlineQuiz.Core\obj\Debug\net10.0\OnlineQuiz.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\OnlineQuiz\Online-Quiz\Backend\OnlineQuiz.Core\obj\Debug\net10.0\OnlineQuiz.Core.AssemblyInfoInputs.cache
+D:\OnlineQuiz\Online-Quiz\Backend\OnlineQuiz.Core\obj\Debug\net10.0\OnlineQuiz.Core.AssemblyInfo.cs
+D:\OnlineQuiz\Online-Quiz\Backend\OnlineQuiz.Core\obj\Debug\net10.0\OnlineQuiz.Core.csproj.CoreCompileInputs.cache
+D:\OnlineQuiz\Online-Quiz\Backend\OnlineQuiz.Core\obj\Debug\net10.0\OnlineQuiz.Core.sourcelink.json
+D:\OnlineQuiz\Online-Quiz\Backend\OnlineQuiz.Core\obj\Debug\net10.0\OnlineQuiz.Core.dll
+D:\OnlineQuiz\Online-Quiz\Backend\OnlineQuiz.Core\obj\Debug\net10.0\refint\OnlineQuiz.Core.dll
+D:\OnlineQuiz\Online-Quiz\Backend\OnlineQuiz.Core\obj\Debug\net10.0\OnlineQuiz.Core.pdb
+D:\OnlineQuiz\Online-Quiz\Backend\OnlineQuiz.Core\obj\Debug\net10.0\ref\OnlineQuiz.Core.dll

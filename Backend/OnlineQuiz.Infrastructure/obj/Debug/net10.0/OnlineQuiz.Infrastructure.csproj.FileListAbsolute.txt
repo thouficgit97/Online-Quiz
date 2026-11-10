@@ -1,0 +1,6 @@
+D:\OnlineQuiz\Online-Quiz\Backend\OnlineQuiz.Infrastructure\obj\Debug\net10.0\OnlineQuiz.Infrastructure.csproj.AssemblyReference.cache
+D:\OnlineQuiz\Online-Quiz\Backend\OnlineQuiz.Infrastructure\obj\Debug\net10.0\OnlineQuiz.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\OnlineQuiz\Online-Quiz\Backend\OnlineQuiz.Infrastructure\obj\Debug\net10.0\OnlineQuiz.Infrastructure.AssemblyInfoInputs.cache
+D:\OnlineQuiz\Online-Quiz\Backend\OnlineQuiz.Infrastructure\obj\Debug\net10.0\OnlineQuiz.Infrastructure.AssemblyInfo.cs
+D:\OnlineQuiz\Online-Quiz\Backend\OnlineQuiz.Infrastructure\obj\Debug\net10.0\OnlineQuiz.Infrastructure.csproj.CoreCompileInputs.cache
+D:\OnlineQuiz\Online-Quiz\Backend\OnlineQuiz.Infrastructure\obj\Debug\net10.0\OnlineQuiz.Infrastructure.sourcelink.json

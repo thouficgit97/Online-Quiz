@@ -1,3 +1,6 @@
+using NHibernate;
+using NHibernate.Criterion;
+
 public class DBService
 {
     private readonly ISessionFactory _sessionFactory;
@@ -22,6 +25,15 @@ public class DBService
         using (var session = _sessionFactory.OpenSession())
         {
             return session.Get<T>(id);
+        }
+    }
+    public T Get<T>(ICriterion restrictions ) where T : class
+    {
+        using(var session = _sessionFactory.OpenSession())
+        {
+            var criteria = session.CreateCriteria<T>();
+            criteria.Add(restrictions);
+            return criteria.UniqueResult<T>();
         }
     }
     public void Update<T>(T entity)

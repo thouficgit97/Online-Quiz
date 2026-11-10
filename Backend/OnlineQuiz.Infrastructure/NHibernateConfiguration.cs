@@ -1,3 +1,10 @@
+using NHibernate;
+using NHibernate.Cfg;
+using NHibernate.Dialect;
+using NHibernate.Driver;
+using NHibernate.Mapping.ByCode;
+using NHibernate.Mapping.ByCode.Conformist;
+
 namespace OnlineQuiz.Api.DTO;
 public static class NHibernateConfiguration
 {
