@@ -9,9 +9,12 @@
 </head>
 <body>
     <form action="" id = "form">
-        <input type="text" name="" id="uname" placeholder="username"><br><br>
-        <input type="password" name="" id="pwd" placeholder="password"><br><br>
-        <button type = "button">Clear</button>
+        <input type="text" name="" id="login-uname" placeholder="username"><br><br>
+        <input type="password" name="" id="login-pwd" placeholder="password"><br><br>
+        <div id ="login-error-message">
+            
+        </div>
+        <button type = "button" onclick="clearLoginForm()">Clear</button>
         <button type = "button">Login</button><br><br>
         <span>Don't you have an account?</span>
         <button type = "button" onclick="redirectToRegister()">Register</button>

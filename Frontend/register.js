@@ -128,5 +128,12 @@ function clearForm()
     document.getElementById("pwd2").value = "";
     document.getElementById("error-message").style.display = "none";
 }
+function clearLoginForm()
+{
+    console.log("clear login caleld");
+    document.getElementById("login-uname").value = "";
+    document.getElementById("login-pwd").value = "";
+    document.getElementById("login-error-message").style.display = "none";
+}
 
 API_BASE_URL = "http://localhost:5002";
