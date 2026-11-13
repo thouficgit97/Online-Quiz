@@ -15,10 +15,10 @@ public class AttemptAnswersMapping : ClassMapping<AttemptAnswers>
         });
         ManyToOne(x => x.Question,m =>
         {
-            m.Column("Questioin");
+            m.Column("Question");
             m.NotNullable(true);
         });
-        ManyToOne(x => x.AnswerOptions,m =>
+        ManyToOne(x => x.SelectedOption,m =>
         {
             m.Column("AnswerOption");
             m.NotNullable(true);

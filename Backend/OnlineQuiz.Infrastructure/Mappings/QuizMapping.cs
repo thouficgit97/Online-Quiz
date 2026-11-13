@@ -1,5 +1,6 @@
 using OnlineQuiz.Core.Entities;
-using NHibernate.Mapping.ByCode;    
+using NHibernate.Mapping.ByCode;
+using NHibernate.Mapping.ByCode.Conformist;
 
 public class QuizMapping : ClassMapping<Quiz>
 {

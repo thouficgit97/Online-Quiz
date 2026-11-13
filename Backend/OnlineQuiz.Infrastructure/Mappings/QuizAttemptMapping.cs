@@ -4,8 +4,9 @@ using OnlineQuiz.Core.Entities;
 
 public class QuizAttemptMapping : ClassMapping<QuizAttempts>
 {
-    QuizAttemptMapping()
+    public QuizAttemptMapping()
     {
+        Table(nameof(QuizAttempts).ToLower());
         Id(x => x.Id, m => m.Generator(Generators.Identity));
         ManyToOne(x => x.AttemptedBy, m =>
         {

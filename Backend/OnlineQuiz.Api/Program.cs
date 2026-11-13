@@ -10,7 +10,7 @@ public class Program
         // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
         builder.Services.AddOpenApi();
         builder.Services.AddControllers();
-        builder.Services.AddInfranstructure(builder.Configuration);
+        builder.Services.AddInfranstructure(builder.Configuration.GetConnectionString("DefaultConnection"));
         builder.Services.AddCors(options =>
         {
             options.AddPolicy("AllowFrontend", policy =>
