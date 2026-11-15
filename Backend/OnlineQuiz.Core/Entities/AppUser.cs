@@ -1,5 +1,5 @@
 namespace OnlineQuiz.Core.Entities;
-public class User
+public class AppUser
 {
     public virtual int Id { get; set; }
     public virtual string Username { get; set; }

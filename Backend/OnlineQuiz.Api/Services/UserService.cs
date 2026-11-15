@@ -7,14 +7,14 @@ public class UserService
     private readonly DBService _dbService;
     public (bool,string) Register(string username, string password)
     {   
-        var user = _dbService.Get<User>(Restrictions.Eq(nameof(User.Username),username));
+        var user = _dbService.Get<AppUser>(Restrictions.Eq(nameof(AppUser.Username),username));
         if(user != null)
         {
             return (false,"Username already exists");
         }
         else
         {
-            var newUser = new User
+            var newUser = new AppUser
             {
                 Username = username,
                 Password = password,
@@ -23,7 +23,7 @@ public class UserService
             };
             try
             {
-                _dbService.Save<User>(newUser);
+                _dbService.Save<AppUser>(newUser);
             }
             catch(Exception ex)
             {
@@ -34,7 +34,7 @@ public class UserService
     }
     public (bool,string) Login(string username, string password)
     {
-        var user = _dbService.Get<User>(Restrictions.Eq(nameof(User.Username),username));
+        var user = _dbService.Get<AppUser>(Restrictions.Eq(nameof(AppUser.Username),username));
         if(user == null || user.Password != password)
         {
             return (false,"Invalid username or password");

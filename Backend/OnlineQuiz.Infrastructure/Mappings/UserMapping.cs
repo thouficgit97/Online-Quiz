@@ -2,27 +2,27 @@ using NHibernate.Mapping.ByCode;
 using NHibernate.Mapping.ByCode.Conformist;
 using OnlineQuiz.Core.Entities;
 
-public class UserMapping : ClassMapping<User>
+public class UserMapping : ClassMapping<AppUser>
 {
     public UserMapping()
     {
-        Table(nameof(User).ToLower());
+        Table(nameof(AppUser).ToLower());
 
         Id(x => x.Id, m =>
         {
-            m.Column(nameof(User.Id).ToLower());
+            m.Column(nameof(AppUser.Id).ToLower());
             m.Generator(Generators.Identity);
         });
 
         Property(x => x.Username, m =>
         {
-            m.Column(nameof(User.Username).ToLower());
+            m.Column(nameof(AppUser.Username).ToLower());
             m.NotNullable(true);
             m.Length(50);
         });
         Property(x => x.Password, m =>
         {
-            m.Column(nameof(User.Password).ToLower());
+            m.Column(nameof(AppUser.Password).ToLower());
             m.NotNullable(true);
             m.Length(100);
         });
