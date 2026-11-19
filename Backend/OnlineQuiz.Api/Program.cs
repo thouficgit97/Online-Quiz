@@ -1,3 +1,4 @@
+using Microsoft.Extensions.FileProviders;
 using NHibernate.Tool.hbm2ddl;
 
 namespace OnlineQuiz.Api;
@@ -33,8 +34,12 @@ public class Program
                     .AllowAnyMethod();
             });
         });
+        var frontendPath = Path.GetFullPath(Path.Combine(builder.Environment.ContentRootPath, "..", "..", "Frontend"));
+        var frontendProvider = new PhysicalFileProvider(frontendPath);
         var app = builder.Build();
         app.UseCors("AllowFrontend");
+        app.UseDefaultFiles(new DefaultFilesOptions { FileProvider = frontendProvider });
+        app.UseStaticFiles(new StaticFileOptions { FileProvider = frontendProvider });
         app.Run();
     }
 }
