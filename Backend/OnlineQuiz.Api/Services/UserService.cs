@@ -7,7 +7,7 @@ public class UserService
     private readonly DBService _dbService;
     public (bool, string) Register(string username, string password)
     {
-        var user = _dbService.Get<AppUser>(Restrictions.Eq(nameof(AppUser.Username), username));
+        var user = _dbService.GetByCriteria<AppUser>(Restrictions.Eq(nameof(AppUser.Username), username));
         if (user != null)
         {
             return (false, "Username already exists");
@@ -34,8 +34,8 @@ public class UserService
     }
     public (bool, string) Login(string username, string password)
     {
-        var user = _dbService.Get<AppUser>(Restrictions.Eq(nameof(AppUser.Username), username));
-        if (user == null || user.Password != BCrypt.Net.BCrypt.Verify(password))
+        var user = _dbService.GetByCriteria<AppUser>(Restrictions.Eq(nameof(AppUser.Username), username));
+        if (user == null ||  !BCrypt.Net.BCrypt.Verify(user.Password,password))
         {
             return (false, "Invalid username or password");
         }

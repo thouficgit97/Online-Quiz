@@ -44,3 +44,4 @@ C:\Thoufic\Project\Online-Quiz\Backend\OnlineQuiz.Api\obj\Debug\net10.0\refint\O
 C:\Thoufic\Project\Online-Quiz\Backend\OnlineQuiz.Api\obj\Debug\net10.0\OnlineQuiz.Api.pdb
 C:\Thoufic\Project\Online-Quiz\Backend\OnlineQuiz.Api\obj\Debug\net10.0\OnlineQuiz.Api.genruntimeconfig.cache
 C:\Thoufic\Project\Online-Quiz\Backend\OnlineQuiz.Api\obj\Debug\net10.0\ref\OnlineQuiz.Api.dll
+C:\Thoufic\Project\Online-Quiz\Backend\OnlineQuiz.Api\bin\Debug\net10.0\BCrypt-Net-Next.dll

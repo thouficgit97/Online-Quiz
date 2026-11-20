@@ -37,8 +37,8 @@ public class QuizService
             CreatedById = quiz.CreatedBy.Id,
             CreatedAt = quiz.CreatedAt
         };
-        var questions = _dbService.G
-        quizDTO.Questions = questions.Select(q => new QuestionDTO();
+        // var questions = _dbService.G
+        // quizDTO.Questions = questions.Select(q => new QuestionDTO();
         return quizDTO;
     }
 }

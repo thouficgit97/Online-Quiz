@@ -16,9 +16,7 @@ public class Program
             options.AddPolicy("AllowFrontend", policy =>
             {
                 policy
-                    .SetIsOriginAllowed(origin =>
-                        Uri.TryCreate(origin, UriKind.Absolute, out var uri) &&
-                        uri.Host == "localhost")
+                    .WithOrigins("http://127.0.0.1:5001")
                     .AllowAnyHeader()
                     .AllowAnyMethod();
             });

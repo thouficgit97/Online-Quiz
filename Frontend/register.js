@@ -2,7 +2,7 @@
 async function register() {
     var usernameError = usernameValidation();
 
-    var errorMessage = document.getElementById("register-error-message");
+    var errorMessage = document.getElementById("register-form-error-message");
 
     if (!usernameError) {
         errorMessage.style.display = "block";
@@ -18,7 +18,7 @@ async function register() {
     errorMessage.style.display = "none";
 
     // Both validations passed. Continue registration.
-    var response = await fetch(`${API_BASE_URL}/api/User/Register`, {
+    var response = await fetch(`${API_BASE_URL}/api/user/register`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -82,7 +82,7 @@ function passwordValidation()
     }
     if(!ispassed)
     {
-        document.getElementById("error-message").textContent = errormessage;
+        document.getElementById("register-form-error-message").textContent = errormessage;
     }
     return ispassed;
 }

@@ -9,7 +9,15 @@ public class DBService
     {
         _sessionFactory = sessionFactory;
     }
-
+    public T GetByCriteria<T>(ICriterion criterion) where T : class
+    {
+        using (var session = _sessionFactory.OpenSession())
+        {
+            var criteria = session.CreateCriteria<T>();
+            criteria.Add(criterion);
+            return criteria.UniqueResult<T>();
+        }
+    }
     public void Save<T>(T entity)
     {
         using (var session = _sessionFactory.OpenSession())
