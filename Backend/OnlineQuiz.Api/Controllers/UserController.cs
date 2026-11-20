@@ -13,8 +13,8 @@ namespace OnlineQuiz.Api
         {
             
             string username = request.Username;
-            string password = request.Password;
-            return _userService.Register(username, password);
+            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(request.Password);
+            return _userService.Register(username, hashedPassword);
             
         }
 
@@ -22,8 +22,8 @@ namespace OnlineQuiz.Api
         public (bool,string) Login([FromBody] RegisterRequest request)
         {
             string username = request.Username;
-            string password = request.Password;
-            return _userService.Login(username, password);
+            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(request.Password);
+            return _userService.Login(username, hashedPassword);
         }
     }
 }

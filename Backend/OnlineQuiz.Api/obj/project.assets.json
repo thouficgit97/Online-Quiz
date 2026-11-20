@@ -18,6 +18,15 @@
           }
         }
       },
+      "BCrypt.Net-Next/4.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/BCrypt-Net-Next.dll": {}
+        },
+        "runtime": {
+          "lib/net10.0/BCrypt-Net-Next.dll": {}
+        }
+      },
       "Iesi.Collections/4.1.1": {
         "type": "package",
         "compile": {
@@ -223,6 +232,31 @@
         "lib/netstandard1.1/Antlr3.Runtime.xml",
         "lib/portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/Antlr3.Runtime.dll",
         "lib/portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/Antlr3.Runtime.xml"
+      ]
+    },
+    "BCrypt.Net-Next/4.2.0": {
+      "sha512": "gwLD2KfCuwQesP17aVh4h6lpiMPEVt5Lbpndo0ej903hNUUTtyxt3ARdDjmuydBRTAUICc7OVKVbaOvc6SQYXA==",
+      "type": "package",
+      "path": "bcrypt.net-next/4.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bcrypt.net-next.4.2.0.nupkg.sha512",
+        "bcrypt.net-next.nuspec",
+        "ico.png",
+        "lib/net10.0/BCrypt-Net-Next.dll",
+        "lib/net10.0/BCrypt.Net-Next.xml",
+        "lib/net462/BCrypt-Net-Next.dll",
+        "lib/net462/BCrypt.Net-Next.xml",
+        "lib/net472/BCrypt-Net-Next.dll",
+        "lib/net472/BCrypt.Net-Next.xml",
+        "lib/net48/BCrypt-Net-Next.dll",
+        "lib/net48/BCrypt.Net-Next.xml",
+        "lib/netstandard2.0/BCrypt-Net-Next.dll",
+        "lib/netstandard2.0/BCrypt.Net-Next.xml",
+        "lib/netstandard2.1/BCrypt-Net-Next.dll",
+        "lib/netstandard2.1/BCrypt.Net-Next.xml",
+        "readme.md"
       ]
     },
     "Iesi.Collections/4.1.1": {
@@ -500,24 +534,25 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "BCrypt.Net-Next >= 4.2.0",
       "Microsoft.AspNetCore.OpenApi >= 10.0.13",
       "OnlineQuiz.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\F.THOUFIC YOUSUF\\.nuget\\packages\\": {}
+    "C:\\Users\\dharu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OnlineQuiz\\Online-Quiz\\Backend\\OnlineQuiz.Api\\OnlineQuiz.Api.csproj",
+      "projectUniqueName": "C:\\Thoufic\\Project\\Online-Quiz\\Backend\\OnlineQuiz.Api\\OnlineQuiz.Api.csproj",
       "projectName": "OnlineQuiz.Api",
-      "projectPath": "D:\\OnlineQuiz\\Online-Quiz\\Backend\\OnlineQuiz.Api\\OnlineQuiz.Api.csproj",
-      "packagesPath": "C:\\Users\\F.THOUFIC YOUSUF\\.nuget\\packages\\",
-      "outputPath": "D:\\OnlineQuiz\\Online-Quiz\\Backend\\OnlineQuiz.Api\\obj\\",
+      "projectPath": "C:\\Thoufic\\Project\\Online-Quiz\\Backend\\OnlineQuiz.Api\\OnlineQuiz.Api.csproj",
+      "packagesPath": "C:\\Users\\dharu\\.nuget\\packages\\",
+      "outputPath": "C:\\Thoufic\\Project\\Online-Quiz\\Backend\\OnlineQuiz.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\F.THOUFIC YOUSUF\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\dharu\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -530,8 +565,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\OnlineQuiz\\Online-Quiz\\Backend\\OnlineQuiz.Infrastructure\\OnlineQuiz.Infrastructure.csproj": {
-              "projectPath": "D:\\OnlineQuiz\\Online-Quiz\\Backend\\OnlineQuiz.Infrastructure\\OnlineQuiz.Infrastructure.csproj"
+            "C:\\Thoufic\\Project\\Online-Quiz\\Backend\\OnlineQuiz.Infrastructure\\OnlineQuiz.Infrastructure.csproj": {
+              "projectPath": "C:\\Thoufic\\Project\\Online-Quiz\\Backend\\OnlineQuiz.Infrastructure\\OnlineQuiz.Infrastructure.csproj"
             }
           }
         }
@@ -553,6 +588,10 @@
         "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
+          "BCrypt.Net-Next": {
+            "target": "Package",
+            "version": "[4.2.0, )"
+          },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[10.0.13, )"
@@ -577,7 +616,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

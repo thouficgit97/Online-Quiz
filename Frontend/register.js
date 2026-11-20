@@ -2,7 +2,7 @@
 async function register() {
     var usernameError = usernameValidation();
 
-    var errorMessage = document.getElementById("error-message");
+    var errorMessage = document.getElementById("register-error-message");
 
     if (!usernameError) {
         errorMessage.style.display = "block";
@@ -24,8 +24,8 @@ async function register() {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            username: document.getElementById("uname").value.trim(),
-            password: document.getElementById("pwd1").value
+            username: document.getElementById("register-form-username").value.trim(),
+            password: document.getElementById("register-form-password").value
         })
     });
 
@@ -37,23 +37,13 @@ async function register() {
         }
     });
 }
-function redirectToLogin()
-{
-    window.location.href = "Login.html";
-}
-
-function redirectToRegister()
-{
-
-    window.location.href = "Register.html";
-}
 
 function passwordValidation()
 {
     //minimum 8 letters ,atleast 1 capital letter,atleast 1 small letter ,atleast one number and one speacial character
     var errormessage = "";
-    var pwd1 = document.getElementById("pwd1").value;
-    var pwd2 = document.getElementById("pwd2").value;
+    var pwd1 = document.getElementById("register-form-password").value;
+    var pwd2 = document.getElementById("register-form-repeat-password").value;
     var ispassed = true;
     if(pwd1 == "" || pwd2 == "")
     {
@@ -100,7 +90,7 @@ function usernameValidation()
 {
     //username should not contain capital letter
     var errormessage = "";
-    var username = document.getElementById("uname").value.trim();
+    var username = document.getElementById("register-form-username").value.trim();
     var ispassed = true;
     if(username == "")
     {
@@ -116,24 +106,18 @@ function usernameValidation()
     }
     if(!ispassed)
     {
-        document.getElementById("error-message").textContent = errormessage;
+        document.getElementById("register-form-error-message").textContent = errormessage;
     }
     return ispassed;
 }
 function clearForm()
 {
     console.log("clear called");
-    document.getElementById("uname").value = "";
-    document.getElementById("pwd1").value = "";
-    document.getElementById("pwd2").value = "";
-    document.getElementById("error-message").style.display = "none";
+    document.getElementById("register-form-username").value = "";
+    document.getElementById("register-form-password").value = "";
+    document.getElementById("register-form-repeat-password").value = "";
+    document.getElementById("register-form-error-message").style.display = "none";
 }
-function clearLoginForm()
-{
-    console.log("clear login caleld");
-    document.getElementById("login-uname").value = "";
-    document.getElementById("login-pwd").value = "";
-    document.getElementById("login-error-message").style.display = "none";
-}
+
 
 API_BASE_URL = "http://localhost:5002";

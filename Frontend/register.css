@@ -6,24 +6,23 @@ body
     min-height: 100vh;
 }
 
-#form
+#register-form,#login-form
 {
-    margin : 5px;
-    padding : 15px;
     border-color: black;
     border: 2px solid;
+    padding : 15px;
     border-radius: 5px;
-    height: 250px;
+    height: 225px;
     width: 200px;
+    background-color: rgb(140, 138, 203);
 }
-
-#error-message
+#login-form
+{
+    height: 200px;
+}
+#register-error-message
 {
     color: red;
     display: none;
     font-size: 12px;
 }
- #register-form-cred
- {
-    background-color: cadetblue;
- }

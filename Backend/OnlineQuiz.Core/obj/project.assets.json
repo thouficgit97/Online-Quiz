@@ -8,19 +8,19 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\F.THOUFIC YOUSUF\\.nuget\\packages\\": {}
+    "C:\\Users\\dharu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OnlineQuiz\\Online-Quiz\\Backend\\OnlineQuiz.Core\\OnlineQuiz.Core.csproj",
+      "projectUniqueName": "C:\\Thoufic\\Project\\Online-Quiz\\Backend\\OnlineQuiz.Core\\OnlineQuiz.Core.csproj",
       "projectName": "OnlineQuiz.Core",
-      "projectPath": "D:\\OnlineQuiz\\Online-Quiz\\Backend\\OnlineQuiz.Core\\OnlineQuiz.Core.csproj",
-      "packagesPath": "C:\\Users\\F.THOUFIC YOUSUF\\.nuget\\packages\\",
-      "outputPath": "D:\\OnlineQuiz\\Online-Quiz\\Backend\\OnlineQuiz.Core\\obj\\",
+      "projectPath": "C:\\Thoufic\\Project\\Online-Quiz\\Backend\\OnlineQuiz.Core\\OnlineQuiz.Core.csproj",
+      "packagesPath": "C:\\Users\\dharu\\.nuget\\packages\\",
+      "outputPath": "C:\\Thoufic\\Project\\Online-Quiz\\Backend\\OnlineQuiz.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\F.THOUFIC YOUSUF\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\dharu\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -67,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

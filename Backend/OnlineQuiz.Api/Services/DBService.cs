@@ -27,12 +27,12 @@ public class DBService
             return session.Get<T>(id);
         }
     }
-    public T Get<T>(ICriterion restrictions ) where T : class
+    public T GetByProjection<T>(ProjectionList projectionList) where T : class
     {
         using(var session = _sessionFactory.OpenSession())
         {
             var criteria = session.CreateCriteria<T>();
-            criteria.Add(restrictions);
+            criteria.SetProjection(projectionList);
             return criteria.UniqueResult<T>();
         }
     }

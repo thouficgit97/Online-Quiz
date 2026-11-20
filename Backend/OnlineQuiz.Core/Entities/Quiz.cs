@@ -6,4 +6,5 @@ public class Quiz
     public virtual string Description { get; set; }
     public virtual DateTime CreatedAt { get; set; }
     public virtual AppUser CreatedBy { get; set; }
+    public virtual string QuizCode { get; set; }
 }
