@@ -21,8 +21,11 @@ public class Program
                     .AllowAnyMethod();
             });
         });
+        builder.Services.AddSingleton<UserService>();
+        builder.Services.AddSingleton<DBService>();
         var app = builder.Build();
         app.UseCors("AllowFrontend");
+        app.MapControllers();
         app.Run();
     }
 }

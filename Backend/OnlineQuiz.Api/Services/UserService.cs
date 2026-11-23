@@ -5,6 +5,10 @@ using OnlineQuiz.Core.Entities;
 public class UserService
 {
     private readonly DBService _dbService;
+    public UserService(DBService dBService)
+    {
+        _dbService = dBService;
+    }
     public (bool, string) Register(string username, string password)
     {
         var user = _dbService.GetByCriteria<AppUser>(Restrictions.Eq(nameof(AppUser.Username), username));
@@ -35,7 +39,7 @@ public class UserService
     public (bool, string) Login(string username, string password)
     {
         var user = _dbService.GetByCriteria<AppUser>(Restrictions.Eq(nameof(AppUser.Username), username));
-        if (user == null ||  !BCrypt.Net.BCrypt.Verify(user.Password,password))
+        if (user == null || !BCrypt.Net.BCrypt.Verify(user.Password, password))
         {
             return (false, "Invalid username or password");
         }

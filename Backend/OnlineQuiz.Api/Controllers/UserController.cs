@@ -8,6 +8,10 @@ namespace OnlineQuiz.Api
     public class UserController : ControllerBase
     {
         private readonly UserService _userService;
+        public UserController(UserService userService)
+        {
+            _userService = userService;
+        }
         [HttpPost("register")]
         public (bool,string) Register([FromBody] RegisterRequest request)
         {
