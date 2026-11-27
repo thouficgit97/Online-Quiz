@@ -8,13 +8,17 @@ namespace OnlineQuiz.Api
     public class UserController : ControllerBase
     {
         private readonly UserService _userService;
+        public UserController(UserService userService)
+        {
+            _userService = userService;
+        }
         [HttpPost("register")]
         public (bool,string) Register([FromBody] RegisterRequest request)
         {
             
             string username = request.Username;
-            string password = request.Password;
-            return _userService.Register(username, password);
+            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(request.Password);
+            return _userService.Register(username, hashedPassword);
             
         }
 
@@ -22,8 +26,8 @@ namespace OnlineQuiz.Api
         public (bool,string) Login([FromBody] RegisterRequest request)
         {
             string username = request.Username;
-            string password = request.Password;
-            return _userService.Login(username, password);
+            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(request.Password);
+            return _userService.Login(username, hashedPassword);
         }
     }
 }

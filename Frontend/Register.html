@@ -8,22 +8,22 @@
     <script src="register.js" defer></script>
 </head>
 <body>
-    <form id = "form">
+    <form id = "register-form">
         <div id = "register-form-cred">
-            <input type="text" placeholder="username" id = "uname"><br><br>
+            <input type="text" placeholder="username" id = "register-form-username" ><br><br>
 
-            <input type="password" placeholder="enter password" name="" id="pwd1"><br><br>
-            <input type="password" placeholder="repeat password" id = "pwd2"><br><br>
+            <input type="password" placeholder="enter password" name="" id="register-form-password"><br><br>
+            <input type="password" placeholder="repeat password" id = "register-form-repeat-password"><br><br>
         </div>
-        <div id ="error-message">
+        <div id ="register-form-error-message">
             
         </div>
         <br>
         <div id = "register-form-buttons">
-            <button type="button" onclick="clearForm()">Clear</button>
+            <button type="button" onclick="clearRegisterForm()">Clear</button>
             <button type="button" onclick="register()">Register</button><br><br>
             <span>Already an User ?</span>
-            <button type="button" onclick="redirectToLogin()">Login</button>
+            <button type="button" onclick="window.location.href='login.html'">Login</button>
         </div>
     </form>
 </body>

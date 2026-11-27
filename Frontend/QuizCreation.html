@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Creation</title>
+  <link rel="stylesheet" href="quizCreation.css">
+  <script src="quizCreation.js"></script>
+</head>
+<body>
+  <div id = "quiz-creation-form">
+    <div id = "quiz-creation-header">
+      <input type="text" name="" id="quiz-creation-title" placeholder="Quiz title">
+      <br>
+      <br>
+      <textarea id="quiz-creation-description" placeholder="Quiz Description"></textarea>
+    </div>
+    <br>
+    <br>
+    <div id = "quiz-questions-body">
+        <div id="quiz-questions">
+
+        </div>
+        <button id = "add-question-button" onclick="createQuestion()">Click to Add Question</button>
+    </div>
+    <button id = "quiz-creation-button" onclick="createQuiz()">Create Quiz</button>
+  </div>
+</body>
+</html>

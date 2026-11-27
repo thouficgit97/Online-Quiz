@@ -11,6 +11,11 @@ public class QuizMapping : ClassMapping<Quiz>
         Property(x => x.Title, m => m.NotNullable(true));
         Property(x => x.Description, m => m.NotNullable(false));
         Property(x => x.CreatedAt, m => m.NotNullable(true));
+        Property(x => x.QuizCode, m =>
+        {
+            m.NotNullable(true);
+            m.Unique(true);
+        });
         ManyToOne(x => x.CreatedBy, m =>
         {
             m.Column("CreatedById");

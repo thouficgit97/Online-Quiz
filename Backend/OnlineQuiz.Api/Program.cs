@@ -12,24 +12,13 @@ public class Program
         // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
         builder.Services.AddOpenApi();
         builder.Services.AddControllers();
-        var configuration = builder.Services.AddInfranstructure(builder.Configuration.GetConnectionString("DefaultConnection"));
-        SchemaUpdate schema = new SchemaUpdate(configuration);
-        schema.Execute(true, true);
-        if (schema.Exceptions.Count > 0)
-        {
-            foreach (var exception in schema.Exceptions)
-            {
-                Console.Error.WriteLine(exception.Message);
-            }
-        }
+        builder.Services.AddInfranstructure(builder.Configuration.GetConnectionString("DefaultConnection"));
         builder.Services.AddCors(options =>
         {
             options.AddPolicy("AllowFrontend", policy =>
             {
                 policy
-                    .SetIsOriginAllowed(origin =>
-                        Uri.TryCreate(origin, UriKind.Absolute, out var uri) &&
-                        uri.Host == "localhost")
+                    .WithOrigins("http://127.0.0.1:5001")
                     .AllowAnyHeader()
                     .AllowAnyMethod();
             });
@@ -40,6 +29,11 @@ public class Program
         app.UseCors("AllowFrontend");
         app.UseDefaultFiles(new DefaultFilesOptions { FileProvider = frontendProvider });
         app.UseStaticFiles(new StaticFileOptions { FileProvider = frontendProvider });
+        builder.Services.AddSingleton<UserService>();
+        builder.Services.AddSingleton<DBService>();
+        var app = builder.Build();
+        app.UseCors("AllowFrontend");
+        app.MapControllers();
         app.Run();
     }
 }

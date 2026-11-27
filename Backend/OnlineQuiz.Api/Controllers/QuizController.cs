@@ -1,5 +1,7 @@
 namespace OnlineQuiz.Api;
 using Microsoft.AspNetCore.Mvc;
+using OnlineQuiz.Api.DTO;
+
 [ApiController]
 [Route("api/[controller]")]
 public class QuizController : ControllerBase
@@ -9,8 +11,8 @@ public class QuizController : ControllerBase
     {
         _quizService = quizService;
     }
-    [HttpPost("quiz")]
-    public void Create()
+    [HttpPost()]
+    public void Create([FromBody] QuizDTO quizDTO)
     {
         
     }
